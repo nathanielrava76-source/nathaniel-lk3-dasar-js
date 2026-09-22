@@ -7,8 +7,9 @@
       --accent: #1d4ed8;
       --accent-soft: #e4ecff;
     }
-    @media (prefers-color-scheme: dark) {
+    @media (prefers-color-scheme: dark ) {
       :root {
+        flex-direction: column;
         --bg: #14171d;
         --panel: #1e222b;
         --text: #eceff5;
