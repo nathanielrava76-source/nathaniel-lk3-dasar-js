@@ -5,13 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Script</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Halo Media</h1>
+    <h1>MENU UTAMA</h1>
 
+    <p class="sub">Pilih satu, isi, Lalu klik proses</p>
+    
+    <div class="layout">
+        <nav class="menu" aria-label="Menu utama">
+            <button type="button" data-menu="1" aria-current="true">1. Mengetahui Umur</button>
+            <button type="button" data-menu="2">2. Bilangan Positif &amp; Negatif</button>
+            <button type="button" data-menu="3">3. Angka Besar Atau Kecil</button>
+            <button type="button" data-menu="4">4. Nilai Predikat</button>
+            <button type="button" data-menu="5">5. Challenge Project</button>
+        </nav>
+
+        <div class="panel">
+            <section id="form-1">
+                <h2>Mengetahui Umur</h2>
+                <div class="field">
+                    <label for="umur">Masukan Umur Anda:</label>
+                    <input type="number" id="umur">
+                </div>
+            </section>
+
+            <section id="form-2" hidden>
+                <h2>Bilangan Positif &amp; Negatif</h2>
+                <div class="field">
+                    <label for="bilangan">Masukan Bilangan:</label>
+                    <input type="number" id="bilangan">
+                </div>
+            </section>
+
+            <section id="form-3" hidden>
+                <h2>Angka Besar Atau Kecil</h2>
+                <div class="row">
+                    <div class="field">
+                    <label for="angka1">Masukan Angka Pertama:</label>
+                    <input type="number" id="angka1">
+                    </div>
+                    <div class="field">
+                        <label for="angka2">Masukan Angka Kedua:</label>
+                        <input type="number" id="angka2">
+                    </div>
+                </div>
+            </section>
+            
+            <section id="form-4" hidden>
+                <h2>Nilai predikat</h2>
+                <div class="field">
+                    <label for="nilai">Masukan Nilai Anda:</label>
+                    <input type="number" id="nilai">
+                </div>
+            </section>
+
+            <section id="form-5" hidden>
+                <h2>Challenge Project</h2>
+                <div class="row">
+                    <div class="field">
+                        <label for="namasiswa">Masukkan nama siswa:</label>
+                        <input type="text" id="namasiswa">
+                    </div>
+                    <div class="field">
+                        <label for="kelas">Masukkan kelas siswa:</label>
+                        <input type="text" id="kelas">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="nilaitugas">Masukkan nilai tugas siswa:</label>
+                    <input type="number" id="nilaitugas">
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <label for="nilaiuts">Masukkan nilai UTS siswa:</label>
+                        <input type="number" id="nilaiuts">
+                    </div>
+                    <div class="field">
+                        <label for="nilaiuas">Masukkan nilai UAS siswa:</label>
+                        <input type="number" id="nilaiuas">
+                    </div>
+                </div>
+            </section>
+
+            <button type="button" class="go" id="tombolProses">Proses</button>
+        </div>
+    </div>
+
+    <div id="output" role="status"></div>
     <script src="script3.js"></script>
+   
     
 
 </body>
